@@ -25,31 +25,31 @@ The framework is built upon an interlocking, hierarchical architecture of 15 mod
 
 *The "verb-tense" system for describing change itself.*
 
-  * **Module 1: Hypergeometric Classification:** Unifies a vast class of saturation laws and transcendental functions as specific cases of the Gauss Hypergeometric Function, ${}*{2}F*{1}(a,b;c;z)$.
-  * **Module 2: The Generative Operator:** Isolates the uniquely stable operator $L\_c(x) = x/(1+cx)$ as a one-parameter group under composition, arising from the ODE $dx/dc = -x^2$.
-  * **Module 5: Dynamic Flow:** Extends static laws into the time domain via the canonical relaxation equation $\\frac{dy}{dt} = k(R(x) - y)$.
-  * **Module 9: Coupled Flow:** Defines oscillation as the canonical behavior of systems with mutually dependent state variables, governed by the matrix equation $\\frac{dY}{dt} = AY$.
-  * **Module 10: Generalized Generation:** Generalizes Module 1, categorizing special functions by the "singularity signature" of their generative differential equations.
+  * **[Module 1: Hypergeometric Classification](https://github.com/jrd100110/nomogenetics/blob/main/mod1.txt):** Unifies a vast class of saturation laws and transcendental functions as specific cases of the Gauss Hypergeometric Function, ${}*{2}F*{1}(a,b;c;z)$.
+  * **[Module 2: The Generative Operator](https://github.com/jrd100110/nomogenetics/blob/main/mod2.txt):** Isolates the uniquely stable operator $L\_c(x) = x/(1+cx)$ as a one-parameter group under composition, arising from the ODE $dx/dc = -x^2$.
+  * **[Module 5: Dynamic Flow(https://github.com/jrd100110/nomogenetics/blob/main/mod5.txt)]:** Extends static laws into the time domain via the canonical relaxation equation $\\frac{dy}{dt} = k(R(x) - y)$.
+  * **[Module 9: Coupled Flow(https://github.com/jrd100110/nomogenetics/blob/main/mod9.txt)]:** Defines oscillation as the canonical behavior of systems with mutually dependent state variables, governed by the matrix equation $\\frac{dY}{dt} = AY$.
+  * **[Module 10: Generalized Generation(https://github.com/jrd100110/nomogenetics/blob/main/mod10.txt)]:** Generalizes Module 1, categorizing special functions by the "singularity signature" of their generative differential equations.
 
 ### Pillar II: The Architecture of Form (How Systems are Structured)
 
 *The "syntax" for describing the static structure of laws and fields.*
 
-  * **Module 3: Compositional Grammar:** Provides an algorithm to deconstruct any rational law into its canonical components: its zeros, poles, and a scaling constant.
-  * **Module 4: Variational Extension:** Elevates any local response law $R(S)$ into a non-local field theory via the principle of least action, yielding the canonical field equation $\\nabla^2S = -R(S)$.
-  * **Module 7: Generalized Factorization:** Replaces Module 3 with a more powerful grammar based on the Weierstrass Factorization Theorem, allowing any analytic function to be decomposed by its roots and poles.
-  * **Module 11: Tensorial Extension:** Elevates the framework to vector and tensor fields using covariant Lagrangians, deriving laws like Maxwell's equations ($\\partial\_{\\mu}F^{\\mu\\nu}=0$) from first principles.
+  * **[Module 3: Compositional Grammar(https://github.com/jrd100110/nomogenetics/blob/main/mod3.txt)]:** Provides an algorithm to deconstruct any rational law into its canonical components: its zeros, poles, and a scaling constant.
+  * **[Module 4: Variational Extension(https://github.com/jrd100110/nomogenetics/blob/main/mod4.txt)]:** Elevates any local response law $R(S)$ into a non-local field theory via the principle of least action, yielding the canonical field equation $\\nabla^2S = -R(S)$.
+  * **[Module 7: Generalized Factorization](https://github.com/jrd100110/nomogenetics/blob/main/mod7.txt):** Replaces Module 3 with a more powerful grammar based on the Weierstrass Factorization Theorem, allowing any analytic function to be decomposed by its roots and poles.
+  * **[Module 11: Tensorial Extension](https://github.com/jrd100110/nomogenetics/blob/main/mod11.txt):** Elevates the framework to vector and tensor fields using covariant Lagrangians, deriving laws like Maxwell's equations ($\\partial\_{\\mu}F^{\\mu\\nu}=0$) from first principles.
 
 ### Pillar III: The Foundation of Reality (The Meta-Laws of Existence)
 
 *The fundamental origins and constraints that shape the system.*
 
-  * **Module 6: Dynamic Parameters:** Introduces memory and path-dependence (e.g., hysteresis) by promoting static parameters to functions of the system's state history.
-  * **Module 8: Stochastic Extension:** Incorporates noise and statistical physics by recasting deterministic laws as the "drift" component in a Langevin Equation.
-  * **Module 12: Operator Quantization:** Provides the formal bridge to quantum mechanics, a deterministic recipe for promoting any classical field theory in the framework to its correct quantum operator equivalent.
-  * **Module 13: Emergent Complexity:** Bridges the micro and macro scales, showing how macroscopic potentials ($V(S)$) emerge from the statistical mechanics of underlying agent-based systems.
-  * **Module 14: Adaptive Evolution:** Models how the laws themselves evolve by treating system parameters as a state vector moving on a fitness landscape, governed by a replicator-mutator equation.
-  * **Module 15: Discreteness & Computation:** Establishes a formal duality between discrete computational models (like cellular automata) and the framework's continuous field theories.
+  * **[Module 6: Dynamic Parameters](https://github.com/jrd100110/nomogenetics/blob/main/mod6.txt):** Introduces memory and path-dependence (e.g., hysteresis) by promoting static parameters to functions of the system's state history.
+  * **[Module 8: Stochastic Extension](https://github.com/jrd100110/nomogenetics/blob/main/mod8.txt):** Incorporates noise and statistical physics by recasting deterministic laws as the "drift" component in a Langevin Equation.
+  * **[Module 12: Operator Quantization](https://github.com/jrd100110/nomogenetics/blob/main/mod12.txt):** Provides the formal bridge to quantum mechanics, a deterministic recipe for promoting any classical field theory in the framework to its correct quantum operator equivalent.
+  * **[Module 13: Emergent Complexity](https://github.com/jrd100110/nomogenetics/blob/main/mod13.txt):** Bridges the micro and macro scales, showing how macroscopic potentials ($V(S)$) emerge from the statistical mechanics of underlying agent-based systems.
+  * **[Module 14: Adaptive Evolution](https://github.com/jrd100110/nomogenetics/blob/main/mod14.txt):** Models how the laws themselves evolve by treating system parameters as a state vector moving on a fitness landscape, governed by a replicator-mutator equation.
+  * **[Module 15: Discreteness & Computation](https://github.com/jrd100110/nomogenetics/blob/main/mod15.txt):** Establishes a formal duality between discrete computational models (like cellular automata) and the framework's continuous field theories.
 
 ## Guiding Principles for Application
 
