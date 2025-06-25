@@ -1,6 +1,4 @@
-# Nomogenetics: An Operating System for Reality
-
-[](https://opensource.org/licenses/MIT)
+# Nomogenetics: A Rosetta Stone for Science.
 
 This repository contains the foundational documents for **Nomogenetics**, a new architecture for scientific theorizing.
 
