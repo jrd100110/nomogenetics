@@ -27,16 +27,16 @@ The framework is built upon an interlocking, hierarchical architecture of 15 mod
 
   * **[Module 1: Hypergeometric Classification](https://github.com/jrd100110/nomogenetics/blob/main/mod1.txt):** Unifies a vast class of saturation laws and transcendental functions as specific cases of the Gauss Hypergeometric Function, ${}*{2}F*{1}(a,b;c;z)$.
   * **[Module 2: The Generative Operator](https://github.com/jrd100110/nomogenetics/blob/main/mod2.txt):** Isolates the uniquely stable operator $L\_c(x) = x/(1+cx)$ as a one-parameter group under composition, arising from the ODE $dx/dc = -x^2$.
-  * **[Module 5: Dynamic Flow(https://github.com/jrd100110/nomogenetics/blob/main/mod5.txt)]:** Extends static laws into the time domain via the canonical relaxation equation $\\frac{dy}{dt} = k(R(x) - y)$.
-  * **[Module 9: Coupled Flow(https://github.com/jrd100110/nomogenetics/blob/main/mod9.txt)]:** Defines oscillation as the canonical behavior of systems with mutually dependent state variables, governed by the matrix equation $\\frac{dY}{dt} = AY$.
-  * **[Module 10: Generalized Generation(https://github.com/jrd100110/nomogenetics/blob/main/mod10.txt)]:** Generalizes Module 1, categorizing special functions by the "singularity signature" of their generative differential equations.
+  * **[Module 5: Dynamic Flow](https://github.com/jrd100110/nomogenetics/blob/main/mod5.txt):** Extends static laws into the time domain via the canonical relaxation equation $\\frac{dy}{dt} = k(R(x) - y)$.
+  * **[Module 9: Coupled Flow](https://github.com/jrd100110/nomogenetics/blob/main/mod9.txt):** Defines oscillation as the canonical behavior of systems with mutually dependent state variables, governed by the matrix equation $\\frac{dY}{dt} = AY$.
+  * **[Module 10: Generalized Generation](https://github.com/jrd100110/nomogenetics/blob/main/mod10.txt):** Generalizes Module 1, categorizing special functions by the "singularity signature" of their generative differential equations.
 
 ### Pillar II: The Architecture of Form (How Systems are Structured)
 
 *The "syntax" for describing the static structure of laws and fields.*
 
-  * **[Module 3: Compositional Grammar(https://github.com/jrd100110/nomogenetics/blob/main/mod3.txt)]:** Provides an algorithm to deconstruct any rational law into its canonical components: its zeros, poles, and a scaling constant.
-  * **[Module 4: Variational Extension(https://github.com/jrd100110/nomogenetics/blob/main/mod4.txt)]:** Elevates any local response law $R(S)$ into a non-local field theory via the principle of least action, yielding the canonical field equation $\\nabla^2S = -R(S)$.
+  * **[Module 3: Compositional Grammar](https://github.com/jrd100110/nomogenetics/blob/main/mod3.txt):** Provides an algorithm to deconstruct any rational law into its canonical components: its zeros, poles, and a scaling constant.
+  * **[Module 4: Variational Extension](https://github.com/jrd100110/nomogenetics/blob/main/mod4.txt):** Elevates any local response law $R(S)$ into a non-local field theory via the principle of least action, yielding the canonical field equation $\\nabla^2S = -R(S)$.
   * **[Module 7: Generalized Factorization](https://github.com/jrd100110/nomogenetics/blob/main/mod7.txt):** Replaces Module 3 with a more powerful grammar based on the Weierstrass Factorization Theorem, allowing any analytic function to be decomposed by its roots and poles.
   * **[Module 11: Tensorial Extension](https://github.com/jrd100110/nomogenetics/blob/main/mod11.txt):** Elevates the framework to vector and tensor fields using covariant Lagrangians, deriving laws like Maxwell's equations ($\\partial\_{\\mu}F^{\\mu\\nu}=0$) from first principles.
 
