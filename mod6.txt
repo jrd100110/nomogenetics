@@ -1,0 +1,54 @@
+### **Guide to Module 6: Dynamic Parameters**
+
+#### **Core Concept**
+
+Module 6 introduces the crucial concepts of **memory** and **path-dependence** into the Nomogenetics framework. It addresses a key limitation of simpler models: the assumption that a system's defining parameters are static constants. This module posits that these parameters can instead be functions of the system's state history.
+
+By promoting parameters from static numbers to dynamic variables, this module provides a rigorous mechanism for generating complex behaviors like hysteresis, where a system's response to a stimulus depends on the direction from which that stimulus is approached.
+
+---
+
+#### **The Formalism for Hysteresis**
+
+The module demonstrates this principle using the generative operator from Module 2, $L_c(x) = x/(1+cx)$, as the target system. The key to creating a hysteretic, path-dependent response is to make the parameter $c$ a function of the direction of change of the stimulus, $x$. This direction is given by the sign of the time derivative of the stimulus, $\dot{x}$.
+
+* **Mathematical Tool:** The Heaviside step function, $H(u)$, is used to switch between parameter values. It is defined as:
+    * $H(u>0) = 1$
+    * $H(u \le 0) = 0$
+* **The Dynamic Parameter:** A time-dependent parameter, $c(t)$, is constructed using the Heaviside function:
+    $$c(t) = c_{up} \cdot H(\dot{x}) + c_{down} \cdot H(-\dot{x})$$
+    Here, $c_{up}$ and $c_{down}$ are two distinct constant values that the parameter will take depending on whether the stimulus $x$ is increasing ($\dot{x}>0$) or decreasing ($\dot{x}<0$).
+* **The System Response:** The system's output, $y$, now becomes implicitly time-dependent and path-dependent, governed by the equation:
+    $$y(x(t)) = \frac{x(t)}{1 + c(t)x(t)}$$
+
+---
+
+#### **Derivation of the Hysteretic Loop**
+
+This formalism naturally produces a hysteretic loop when the stimulus $x$ is put through a full cycle (e.g., from a low value to a high value and back again).
+
+**1. The Forward Path ($\dot{x} > 0$)**
+
+* During the phase where the stimulus $x$ is increasing, $\dot{x}$ is positive.
+* This means $H(\dot{x}) = 1$ and $H(-\dot{x}) = 0$.
+* The dynamic parameter $c(t)$ collapses to the constant value $c_{up}$.
+* The system follows the response curve:
+    $$y_{up}(x) = \frac{x}{1+c_{up}x}$$
+
+**2. The Return Path ($\dot{x} < 0$)**
+
+* After the stimulus reverses and begins to decrease, $\dot{x}$ becomes negative.
+* This means $H(\dot{x}) = 0$ and $H(-\dot{x}) = 1$.
+* The parameter $c(t)$ now switches to the constant value $c_{down}$.
+* The system now follows a different response curve on its way back:
+    $$y_{down}(x) = \frac{x}{1+c_{down}x}$$
+
+**The Result**
+
+Because $c_{up}$ and $c_{down}$ are defined as distinct constants, the path the system takes during the increase is not the same as the path it takes during the decrease. This forces the system to trace a closed loop in the $y-x$ plane. The area enclosed by this loop has direct physical significance, often representing a quantity like the energy dissipated as heat during one cycle.
+
+---
+
+#### **Conclusion for Module 6**
+
+Module 6 provides a transparent mechanism for incorporating memory and path-dependence into the framework's models. By promoting static parameters to dynamic functions that depend on the system's history, it allows the simple, static laws from earlier modules to generate sophisticated and realistic behaviors like hysteresis. This dramatically increases the descriptive power of the architecture, enabling it to model a wider range of phenomena where history matters.

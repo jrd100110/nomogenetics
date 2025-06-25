@@ -1,0 +1,74 @@
+Here is the extensive and detailed guide for Module 3.
+
+***
+
+### **Guide to Module 3: Compositional Grammar**
+
+#### **Core Concept**
+
+Module 3 introduces a powerful "decomposition" principle into the Nomogenetics framework. It provides a systematic, algorithmic method for deconstructing any complex *rational law* into a canonical product of its most fundamental components. These components are the linear terms corresponding to the system's "zeros" (where the response is null) and "poles" (where the response is infinite).
+
+This module asserts that a rational function is fully and uniquely specified by this set of zeros, poles, and a single scaling constant. This provides a powerful analytical tool for understanding the structure of many laws found in science and engineering, revealing that complex behaviors are often the result of simple multiplicative and divisive interactions.
+
+---
+
+#### **The Factorization Algorithm**
+
+The core of Module 3 is a canonical factorization process guaranteed by the Fundamental Theorem of Algebra. Any rational function, which is a ratio of two polynomials $R(x) = P(x)/Q(x)$, can be expressed in a standard form based on the roots of these polynomials.
+
+* **System Zeros ($\alpha_i$):** These are the roots of the numerator polynomial, $P(x)$. They are the input values for which the system's output is zero.
+* **System Poles ($\beta_j$):** These are the roots of the denominator polynomial, $Q(x)$. They are the input values for which the system's output goes to infinity.
+
+The canonical factored form is:
+
+$$R(x) = K \cdot \frac{\prod_i (x - \alpha_i)}{\prod_j (x - \beta_j)}$$
+
+Where **K** is a scaling constant determined by the ratio of the leading coefficients of the original polynomials, $P(x)$ and $Q(x)$.
+
+---
+
+#### **Application: Deconstruction of the BET Isotherm**
+
+To demonstrate the power of this algorithm, we can deconstruct the Brunauer-Emmett-Teller (BET) isotherm, a foundational law in the field of surface chemistry that describes the adsorption of gas molecules onto a solid surface.
+
+* **Target Law:** The BET isotherm is given by the rational function:
+    $$R(x) = \frac{cx}{(1-x)(1-x+cx)}$$
+
+We will now deconstruct this function into its canonical components by following a two-step process.
+
+**Step 1: Root Finding**
+
+First, we must find all the zeros and poles of the function.
+
+* **Numerator (Zeros):** The numerator is $P(x) = cx$. Setting this to zero gives the single system zero:
+    $$cx = 0 \implies \alpha_1 = 0$$
+* **Denominator (Poles):** The denominator is $Q(x) = (1-x)(1-x+cx)$. We find the poles by setting each factor to zero:
+    1.  $1 - x = 0 \implies \beta_1 = 1$
+    2.  $1 - x + cx = 0 \implies 1 + (c-1)x = 0 \implies x = \frac{-1}{c-1} \implies \beta_2 = \frac{1}{1-c}$
+
+**Step 2: Factorization and Constant Derivation**
+
+Now that we have the zeros and poles, we can write the factored form and determine the scaling constant K.
+
+* **Factored Form:** Based on our roots, the function can be written as:
+    $$R(x) = K \cdot \frac{x-0}{(x-1)(x-\frac{1}{1-c})}$$
+* **Constant Derivation:** To find K, we compare the ratio of the leading coefficients of the original polynomials.
+    1.  The leading term of the numerator $P(x)=cx$ is **c**.
+    2.  We must expand the denominator $Q(x)$ to find its leading term:
+        $Q(x) = (1-x)(1-x+cx) = 1 - x + cx - x + x^2 - cx^2$
+        $Q(x) = (1-c)x^2 + (c-2)x + 1$
+        The leading term of the denominator is **(1-c)**.
+    3.  The constant K is the ratio of these coefficients:
+        $$K = \frac{\text{leading coeff of numerator}}{\text{leading coeff of denominator}} = \frac{c}{1-c}$$
+
+**Canonical Form of the BET Isotherm**
+
+By assembling the constant, the zero, and the poles, we arrive at the deconstructed form of the BET isotherm, expressed as a product of its fundamental components:
+
+$$R(x) = \left(\frac{c}{1-c}\right) \cdot (x)^{1} \cdot (x-1)^{-1} \cdot \left(x-\frac{1}{1-c}\right)^{-1}$$
+
+---
+
+#### **Conclusion for Module 3**
+
+Module 3 provides a powerful and systematic method for dissecting rational laws and understanding their structure from the "bottom-up." It shows that the behavior of such systems is not an arbitrary property of a complex formula, but is fully dictated by the location of its zeros and poles. This decompositional grammar is a cornerstone of the framework's analytical power and serves as a crucial counterpart to the "generative" perspective of other modules.

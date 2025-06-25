@@ -1,0 +1,74 @@
+### **Guide to Module 5: Dynamic Flow**
+
+#### **Core Concept**
+
+Module 5 provides the crucial bridge from the static, equilibrium-based laws of Part I to the dynamic evolution of systems in time. It addresses the fundamental question: "Given a system's target equilibrium state, how does it get there over time?" The module posits that the rate of change of a system's output is directly proportional to the difference between its current state and its target equilibrium state. This introduces a canonical and universal model for relaxation dynamics.
+
+---
+
+#### **The Canonical Equation of Relaxation**
+
+The module states that the temporal evolution of a system's output, $y(t)$, towards its target equilibrium state, $R(x)$, is governed by a first-order non-homogeneous linear differential equation.
+
+The equation is:
+$$\frac{dy}{dt} = k(R(x) - y)$$
+
+Where:
+* $y(t)$ is the system's actual output at a given time $t$.
+* $R(x)$ is the target equilibrium response function for a given stimulus $x$, as defined by the static modules of Part I.
+* $k$ is the rate constant of the system, representing its intrinsic agility or speed of response (units of $T^{-1}$).
+* $\tau = 1/k$ is the system's characteristic **relaxation time**.
+
+---
+
+#### **Derivation of the Response to a Step Stimulus**
+
+A common and important scenario is to analyze a system's response when a constant stimulus, $x$, is applied at time $t=0$ and held constant. In this case, the target $R(x)$ is a constant value. The module provides a step-by-step derivation for the exact trajectory of $y(t)$.
+
+**1. Rearrange the ODE**
+
+The equation is first put into the standard form for a linear first-order ODE: $\frac{dy}{dt} + P(t)y = Q(t)$.
+
+$$\frac{dy}{dt} + ky = kR(x)$$
+
+**2. Define the Integrating Factor**
+
+The integrating factor, $\mu(t)$, is calculated as $e^{\int P(t)dt}$.
+
+$$\mu(t) = e^{\int kdt} = e^{kt}$$
+
+**3. Multiply Through by the Integrating Factor**
+
+Every term in the rearranged ODE is multiplied by $\mu(t)$.
+
+$$e^{kt}\frac{dy}{dt} + ke^{kt}y = kR(x)e^{kt}$$
+
+**4. Apply the Product Rule in Reverse**
+
+The left side of the equation is now the exact derivative of the product $y(t)\mu(t)$.
+
+$$\frac{d}{dt}(y(t)e^{kt}) = kR(x)e^{kt}$$
+
+**5. Integrate Both Sides**
+
+We integrate both sides from an initial time $t=0$ (with initial condition $y(0)=y_0$) to a final time $t$.
+
+$$\int_{0}^{t}\frac{d}{dt'}(y(t')e^{kt'})dt' = \int_{0}^{t}kR(x)e^{kt'}dt'$$$$[y(t')e^{kt'}]_{0}^{t} = kR(x)[\frac{1}{k}e^{kt'}]_{0}^{t}$$$$y(t)e^{kt} - y_0e^{0} = R(x)(e^{kt}-e^{0})$$
+$$y(t)e^{kt} - y_0 = R(x)(e^{kt}-1)$$
+
+**6. Solve for y(t)**
+
+Finally, we isolate $y(t)$ by multiplying the entire equation by $e^{-kt}$.
+
+$$y(t) = (R(x)(e^{kt}-1))e^{-kt} + y_0e^{-kt}$$
+$$y(t) = R(x)(1-e^{-kt}) + y_0e^{-kt}$$
+
+This solution can be rearranged to clearly show the structure as a final state plus a decaying transient term related to the initial conditions.
+
+$$y(t) = R(x) + (y_0-R(x))e^{-kt}$$
+
+---
+
+#### **Conclusion for Module 5**
+
+Module 5 provides the formal bridge from the static framework of Part I to time-domain dynamics. It establishes a canonical law for how systems approach equilibrium. The derived solution demonstrates that any system governed by this module will exponentially approach its target equilibrium state $R(x)$ with a characteristic time constant $\tau=1/k$. This module introduces the fundamental process of "becoming" to the architecture, allowing it to model not just what a system *is* at equilibrium, but how it gets there.
