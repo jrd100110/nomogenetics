@@ -1,6 +1,8 @@
 # Nomogenetics: A Rosetta Stone for Science.
 [nomogenetics.com](https://nomogenetics.com/)
 
+## NOTE - THIS FRAMEWORK IS BEING DEVELOPED RAPIDLY - ALWAYS CONSULT THE LATEST PDF PAPER VIA OUR WEBSITE/ZENODO BEFORE IMPLEMENTING GITHUB FILES.
+
 This repository contains the foundational documents for **Nomogenetics**, a new open-source architecture for scientific theorizing, discovery and modelling.
 
 > We stand at a pivotal moment. Our capacity to generate data outpaces our ability to synthesize it into coherent, fundamental understanding. Nomogenetics is the imperative to shift from a science of piecemeal description to a science of universal generative principles. It is the systematic endeavor to uncover the fundamental source code of reality, the compact, powerful, and interconnected set of generative modules from which all observable phenomena and their governing laws emerge.
