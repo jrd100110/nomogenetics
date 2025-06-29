@@ -1,7 +1,7 @@
 # Nomogenetics: A Rosetta Stone for Science.
 [nomogenetics.com](https://nomogenetics.com/)
 
-## NOTE - THIS FRAMEWORK IS BEING DEVELOPED RAPIDLY - ALWAYS CONSULT THE LATEST PDF PAPER VIA OUR WEBSITE/ZENODO BEFORE IMPLEMENTING GITHUB FILES.
+## NOTE - THIS FRAMEWORK IS BEING DEVELOPED RAPIDLY - ALWAYS CONSULT THE LATEST PDF PAPERS VIA OUR WEBSITE/ZENODO BEFORE IMPLEMENTING GITHUB FILES.
 
 This repository contains the foundational documents for **Nomogenetics**, a new open-source architecture for scientific theorizing, discovery and modelling.
 
